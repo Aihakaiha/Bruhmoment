@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="main-sektio">
+        <h1 id="otsikko">kyselylomake</h1>
+        <form action="/admin/process-form.php" id="kyselylomake" method="POST">
+            <p>
+                <label id="nimisyöttö">Nimi:</label>
+                <br>
+                <input id="nimi" placeholder="Kirjoita nimesi" type="text" name="nimi">
+            </p>
+            
+                <label id="emailsyotto">Sähköposti:</label>
+            <br>
+            <input id="email" placeholder="Kirjoita sähköpostisi" type="text" name="sahkoposti">
+            <p>
+                <label id="ikasyotto">Ikä:</label>
+                <br>
+                <input id="ika" placeholder="Kirjoita ikäsi" type="text" name="ika">
+            </p>
+            <label>
+                Mihin ryhmään kuulut?
+            </label>
+            <select id="pudotus" name="mika_attribuutti">
+                <option value="Opiskelija">Opiskelija</option>
+                <option value="Työssä">Työssä</option>
+                <option value="Työtön">Työtön</option>
+                <option value="Eläkeläinen" selected>Eläkeläinen</option>
+            </select>
+            <label>Suositteletko Keudaa ystävällesi?</label>
+            <table></table>
+            <tr><td><input type="radio" name="mikatagi" value="Kyllä">Kyllä</td></tr>
+            <br>
+            <input type="radio" name="mikatagi" value="En"> En
+            <br>
+            <input type="radio" name="mikatagi" value="En osaa sanoa"> En osaa sanoa
+        </table>
+    </br>
+            <label>Parasta Keudassa on:</label>
+            <table>
+            <tr><td><input type="checkbox" name="webkielet" value="Ammattiaineet"> Ammattiaineet</td></tr>
+            <br>
+            <input type="checkbox" name="webkielet" value="YTO-aineet"> YTO-aineet
+            <br>
+            <input type="checkbox" name="webkielet" value="Ruokatunti"> Ruokatunti
+            </br>
+        </table>
+            <label>Mikä on lempiaineesi Keudassa?</label>
+            </br>
+            <select name="mika_attribuutti">
+                <option value="matikka">matikka</option>
+                <option value="äidinkieli">äidinkieli</option>
+                <option value="fysiikka">fysiikka</option>
+                <option value="ruotsi" selected>ruotsi</option>
+            </select>
+        </br>
+            <textarea id="palaute"></textarea>
+        </br>
+            <input type="submit" value="Laheta">
+        </form>
+    </section>
+</body>
+</html>
