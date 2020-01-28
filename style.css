@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+    padding: auto;
+    background-image: url("./back.jpg");
+}
+#m {
+    position: absolute;
+    left: 44%;
+    top: 20%;
+    background-color: rgb(49, 112, 194);
+    width: 350px;
+    height: 650px;
+}
+#otsikko {
+    margin-left: 30%;
+}
+#kyselylomake {
+    margin-left: 15px;
+    width: 315px;
+}
+#nimi, #email, #ika {
+    width: 100%;
+    height: 21px;
+    display: inline-block;
+}
+#pudotus {
+    height: 25px;
+    width: 319.5px;
+}
+#viiva {
+    border: 1px solid black;
+}
+#tkeho {
+    font-size: 15px;
+}
+#kommentti {
+    min-width: 120px;
+    min-height: 50px;
+    max-width: 315px;
+    max-height: 100px;
+}
+#nappi {
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    width: 70px;
+    height: 31px;
+    border: none;
+    border-radius: 3px;
+}
